@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-brand-blue: #0F1E4C;
+  --color-brand-blue-dark: #070F25;
+  --color-brand-blue-light: #1A3175;
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-light: #F6E294;
+  --color-brand-gold-dark: #A1801F;
+  --color-brand-crimson: #9D1C24;
+  --color-brand-crimson-light: #C82333;
+}
+
+/* Custom styles for high-fidelity golden gradient text & backgrounds */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F6E294 0%, #D4AF37 50%, #A1801F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #F6E294 0%, #D4AF37 50%, #A1801F 100%);
+}
+
+.blue-gold-gradient {
+  background: linear-gradient(180deg, #0F1E4C 0%, #070F25 100%);
+}
+
+.crimson-gradient-bg {
+  background: linear-gradient(135deg, #C82333 0%, #9D1C24 100%);
+}
+
+/* Animation for subtle floating elements */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070F25;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F6E294;
+}
+
+html {
+  scroll-behavior: smooth;
+}

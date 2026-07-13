@@ -1,0 +1,6 @@
+{
+  "name": "Stm Scholars",
+  "description": "Premium educational website for Stm Scholars (Foundation of Career) coaching for CBSE K-12, JEE, NEET, and college classes, featuring an interactive online admission portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
